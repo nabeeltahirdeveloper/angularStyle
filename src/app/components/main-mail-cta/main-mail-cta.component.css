@@ -1,0 +1,14 @@
+i {
+  font-size: 2rem;
+  margin-inline: 0.5rem;
+}
+i:hover {
+  cursor: pointer;
+}
+i:active {
+  transform: scale(0.85);
+  -webkit-transform: scale(0.85);
+  -moz-transform: scale(0.85);
+  -ms-transform: scale(0.85);
+  -o-transform: scale(0.85);
+}
