@@ -1,6 +1,6 @@
 <div class="main-mail-container">
   <h3>{{mail.title}}</h3>
   <p>{{mail.body}}</p>
-  <i class="fa-solid fa-square-check"></i>
+  <i (click)="editItem(mail, index)" class="fa-solid fa-pencil"></i>
   <i (click)="deleteItem(index)" class="fa-regular fa-trash-can"></i>
 </div>
