@@ -1,4 +1,6 @@
 <div class="main-mail-container">
-  <p>Today Mail</p>
-  <app-main-mail-cta></app-main-mail-cta>
+  <h3>{{mail.title}}</h3>
+  <p>{{mail.body}}</p>
+  <i class="fa-solid fa-square-check"></i>
+  <i (click)="deleteItem(index)" class="fa-regular fa-trash-can"></i>
 </div>

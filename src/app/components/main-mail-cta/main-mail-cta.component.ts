@@ -11,5 +11,7 @@ export class MainMailCtaComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  deleteItem(){
+    
+  }
 }

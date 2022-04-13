@@ -1,4 +1,7 @@
 <div class="main-container">
-  <app-main-add></app-main-add>
-  <app-main-mail></app-main-mail>
+  <app-main-add (sendMail)="sendMail($event)"></app-main-add>
+  <div *ngFor="let mail of allMails; index as i;">
+    
+    <app-main-mail (deleteMail)="mailDelete($event)" [mail]="mail" [index]="i"></app-main-mail>
+  </div>
 </div>

@@ -10,10 +10,21 @@ import { SidebarCtaComponent } from './components/sidebar-cta/sidebar-cta.compon
 import { MainAddComponent } from './components/main-add/main-add.component';
 import { MainMailComponent } from './components/main-mail/main-mail.component';
 import { MainMailCtaComponent } from './components/main-mail-cta/main-mail-cta.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatDialogModule} from '@angular/material/dialog';
+import { AddDialogComponent } from './components/add-dialog/add-dialog.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
+import {MatButtonModule} from '@angular/material/button';
+
+
+
+
 
 @NgModule({
-  declarations: [AppComponent, MailComponent, SidebarComponent, MainComponent, SidebarCtaComponent, MainAddComponent, MainMailComponent, MainMailCtaComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  declarations: [AppComponent, MailComponent, SidebarComponent, MainComponent, SidebarCtaComponent, MainAddComponent, MainMailComponent, MainMailCtaComponent, AddDialogComponent],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule,MatDialogModule,MatFormFieldModule, MatInputModule, FormsModule, MatButtonModule],
   providers: [],
   bootstrap: [AppComponent],
 })
