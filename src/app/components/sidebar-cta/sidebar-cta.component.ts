@@ -7,6 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class SidebarCtaComponent implements OnInit {
   @Input() ctaText!: string;
+
+  sideBarLink="/"+this.ctaText
   constructor() {}
 
   ngOnInit(): void {}
